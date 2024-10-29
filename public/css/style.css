@@ -1,0 +1,164 @@
+/* .boilerplate{
+    background-color: pink;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    flex: 1; /* Ensure this grows to fill space */
+}
+
+body{
+    font-family: "Plus Jakarta Sans" ,sans-serif !important;
+    display: flex;
+    flex-direction:column ;
+    min-height: 100vh;
+}
+
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.navbar-brand{
+    color: #fe424d !important;
+}
+
+.fa-squarespace{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 !important;
+}
+/* footer */
+footer {
+    background-color: #ebebeb; /* Match the footer background color */
+    width: 100%; /* Full width */
+}
+
+.f-info {
+    text-align: center;
+    height: 8rem; /* Maintain the height */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.f-info-socials {
+    margin-bottom: 0.5rem; /* Space between icons and text */
+}
+
+.f-info-socials i {
+    margin: 0 0.5rem; /* Space between icons */
+    font-size: 1.5rem; /* Adjust icon size if needed */
+}
+
+.f-info-brand {
+    margin-bottom: 0.5rem; /* Space between brand text and links */
+}
+
+.f-info-links {
+    display: flex; /* Use flex for links */
+    justify-content: center; /* Center links */
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+    margin: 0 1rem; /* Space between links */
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+/* cards */
+
+.listing-card{
+    border:none !important;
+    margin-bottom:2rem ;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0;
+}
+
+.card-text p{
+    font-weight: 400;
+}
+.listing-link{
+    text-decoration: none;
+}
+/* card effect */
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+.btn-edit{
+    background-color: #fe424d !important;
+    border: none !important;
+    
+}
+
+/* show details */
+.show-img{
+    height: 30vh;
+}
+.btns{
+    display: flex;
+
+}
+
+#map { 
+    height: 400px;
+    width: 100vh;
+}
+  #filters{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .filter{
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    opacity: 0.7;
+  }
+  .filter:hover{
+    opacity: 1;
+    cursor: pointer;
+  }
+  .filter p {
+    font-size: small;
+  }
+  .tax-info{
+    display: none;
+  }
+  .tax-toggle{
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 3.5rem;
+    padding: 1rem;
+    margin-left: 2rem;
+  }
+  

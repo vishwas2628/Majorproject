@@ -1,0 +1,41 @@
+<% layout('layouts/boilerplate') %>
+<body>
+    <div class="container mt-4 row col-7 offset-2">
+        <h2>Enter your list details</h2>
+        <form action="/listings" method="post" novalidate class="needs-validation" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="title" name="listing[title]" placeholder="Enter title" required>
+                <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" id="description" name="listing[description]" placeholder="Enter description" required></textarea>
+                <div class="invalid-feedback">enter valid charachters</div>
+            </div>
+            <div class="mb-3">
+                <label for="image" class="form-label">Upload Image</label>
+                <input type="file" class="form-control" id="image" name="listing[image]" placeholder="Enter image here URL/LINK" required>
+                <div class="invalid-feedback">enter velid creditnals</div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-md-4">
+                    <label for="price" class="form-label">Price</label>
+                    <input  class="form-control" id="price" name="listing[price]" placeholder="Enter price" required>
+                    <div class="invalid-feedback">price should be valid</div>
+                </div>
+                <div class="mb-3 col-md-8">
+                    <label for="country" class="form-label">Country</label>
+                    <input type="text" class="form-control" id="country" name="listing[country]" placeholder="Enter country" required>
+                    <div class="invalid-feedback">country name is invalid!</div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="location" class="form-label">Location</label>
+                <input type="text" class="form-control" id="location" name="listing[location]" placeholder="Enter location" required>
+                <div class="invalid-feedback">location should correct</div>
+            </div>
+            <button type="submit" class="btn-edit btn btn-dark" >Add</button><br><br><br>
+        </form>
+    </div>
+</body>
